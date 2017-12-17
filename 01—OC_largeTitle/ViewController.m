@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()<UIScrollViewDelegate>
-/**  */
+/** 右边按钮 */
 @property(nonatomic,strong) UIButton *btn1;
 
 @end
@@ -29,11 +29,10 @@
         // Fallback on earlier versions
     }
 
-//    添加左右按钮
-    
+//    左边按钮
     UIButton *btn2 = [[UIButton alloc] init];
     [btn2 setImage:[UIImage imageNamed:@"shousuo-2"] forState:UIControlStateNormal];
-   
+//   右边按钮
     UIButton *btn1 = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width * 0.9, 57.5, 25, 25)];
     [btn1 setImage:[UIImage imageNamed:@"xiazai"] forState:UIControlStateNormal];
 
@@ -73,7 +72,7 @@
         if (@available(iOS 11.0, *)) {
             [self.navigationController.navigationBar setPrefersLargeTitles:NO];
         } else {
-                // Fallback on earlier versions
+                
         }
         
         self.btn1.frame = CGRectMake(self.view.frame.size.width * 0.9, 9.5, 25, 25);
@@ -83,22 +82,23 @@
         if (@available(iOS 11.0, *)) {
             [self.navigationController.navigationBar setPrefersLargeTitles:YES];
         } else {
-            // Fallback on earlier versions
+            
         }
 
-        CGRect tempREct = self.btn1.frame;
-        tempREct.origin.y = -58.5-scrollView.contentOffset.y;
-        self.btn1.frame = tempREct;
+        CGRect tempRect = self.btn1.frame;
+        tempRect.origin.y = -58.5-scrollView.contentOffset.y;
+        self.btn1.frame = tempRect;
         self.navigationItem.leftBarButtonItem.customView.hidden = NO;
+
 //        searchcontrol
     }else if (scrollView.contentOffset.y>=-168&&scrollView.contentOffset.y<-116){
         self.btn1.frame = CGRectMake(self.view.frame.size.width * 0.9, 57.5, 25, 25);
         self.navigationItem.leftBarButtonItem.customView.hidden = YES;
 
     }else if (scrollView.contentOffset.y<-168){
-        CGRect tempREct = self.btn1.frame;
-        tempREct.origin.y = -110.5-scrollView.contentOffset.y;
-        self.btn1.frame = tempREct;
+        CGRect tempRect = self.btn1.frame;
+        tempRect.origin.y = -110.5-scrollView.contentOffset.y;
+        self.btn1.frame = tempRect;
     }
 }
 

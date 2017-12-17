@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55F6D9381FE6829400E85D1C /* largeTitle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 55F6D9371FE6829300E85D1C /* largeTitle.gif */; };
 		5BBF0A6B1FE113DF00FDF7EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF0A6A1FE113DF00FDF7EF /* AppDelegate.m */; };
 		5BBF0A6E1FE113DF00FDF7EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBF0A6D1FE113DF00FDF7EF /* ViewController.m */; };
 		5BBF0A711FE113DF00FDF7EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBF0A6F1FE113DF00FDF7EF /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55F6D9371FE6829300E85D1C /* largeTitle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = largeTitle.gif; sourceTree = "<group>"; };
 		5BBF0A661FE113DF00FDF7EF /* 01—OC_largeTitle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01—OC_largeTitle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBF0A691FE113DF00FDF7EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5BBF0A6A1FE113DF00FDF7EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55F6D9361FE6827900E85D1C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				55F6D9371FE6829300E85D1C /* largeTitle.gif */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		5BBF0A5D1FE113DF00FDF7EF = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 				5BBF0A741FE113DF00FDF7EF /* LaunchScreen.storyboard */,
 				5BBF0A771FE113DF00FDF7EF /* Info.plist */,
 				5BBF0A781FE113DF00FDF7EF /* main.m */,
+				55F6D9361FE6827900E85D1C /* resource */,
 			);
 			path = "01—OC_largeTitle";
 			sourceTree = "<group>";
@@ -241,6 +252,7 @@
 				5BBF0A761FE113DF00FDF7EF /* LaunchScreen.storyboard in Resources */,
 				5BBF0A731FE113DF00FDF7EF /* Assets.xcassets in Resources */,
 				5BBF0A711FE113DF00FDF7EF /* Main.storyboard in Resources */,
+				55F6D9381FE6829400E85D1C /* largeTitle.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
